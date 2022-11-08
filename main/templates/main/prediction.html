@@ -1,0 +1,43 @@
+{% extends "base.html"%}
+
+{% block head %}
+<title>Prediction {{data.id}}</title>
+
+<style>
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr .2fr .3fr .5fr;
+        grid-template-areas: "title" "prediction" "probability" "image";
+    }
+
+    .image {
+        grid-area: image;
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .prediction {
+        grid-area: prediction;
+    }
+
+    .probability {
+        grid-area: probability;
+    }
+
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+<h1 class="title">Prediction {{data.id}}</h1>
+<p class="prediction">Class Name: {{class_name}}</p>
+<img class="image" src="{{data.image.url}}" alt="image">
+
+{% endblock %}

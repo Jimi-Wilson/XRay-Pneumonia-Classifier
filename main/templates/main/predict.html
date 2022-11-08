@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block head %}
+<title>Predict</title>
+{% endblock %}
+
+{% block content %}
+<h1>Make A prediction</h1>
+
+
+<form method="POST" enctype="multipart/form-data">
+    {{form}}
+    {% csrf_token %}
+    <button type="submit">Classify</button>
+</form>
+
+<p>{{data}}</p>
+{% endblock %}
