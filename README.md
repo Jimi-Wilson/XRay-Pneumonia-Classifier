@@ -26,7 +26,7 @@ The success of this project is demonstrated by the performance of the final cust
 -   **High-Performance Custom CNN:** Architected a custom Convolutional Neural Network that achieved a **99.0% F1-Score**, outperforming a standard fine-tuned `EfficientNetB0` transfer learning approach.
 -   **End-to-End ML Pipeline:** A complete and reproducible workflow from data pre-processing (`tf.data`) to model training and evaluation of four different architectures.
 -   **Robust Training Techniques:** Implemented methods to combat severe dataset class imbalance (class weights) and overfitting (dropout, batch normalization).
-- **Reproducible Workflow:** The entire experiment is contained within a single Jupyter Notebook
+- **Reproducible Workflow:** The entire experiment is contained within a single Jupyter Notebook.
 
 ## Tech Stack
 
